@@ -1,0 +1,36 @@
+Variables:
+
+The variables selected for this database come from the accelerometer and gyroscope 3-axial raw signals timeAcceleration-XYZ and timeGyro-XYZ. These time domain signals (prefix 'time') were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (timeBodyAcceleration-XYZ and tGravityAcceleration-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timeBodyAccelerationJerk-XYZ and timeBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (timeBodyAccelerationMagnitute, timeGravityAccelerationMagnitute, timeBodyAccelerationJerkMagnitute, timeBodyGyroMagnitute, timeBodyGyroJerkMagnitute). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequencyBodyAcc-XYZ, frequencyBodyAccJerk-XYZ, frequencyBodyGyro-XYZ, frequencyBodyAccJerkMag, frequencyBodyGyroMag, frequencyBodyGyroJerkMag. (Indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+timeBodyAcceleration-XYZ
+timeGravityAcceleration-XYZ
+timeBodyAccelerationJerk-XYZ
+timeBodyGyro-XYZ
+timeBodyGyroJerk-XYZ
+timeBodyAccelerationMagnitute
+timeGravityAccelerationMagnitute
+timeBodyAccelerationJerkMagnitute
+timeBodyGyroMagnitute
+timeBodyGyroJerkMagnitute
+frequencyBodyAcceleration-XYZ
+frequencyBodyAccelerationJerk-XYZ
+frequencyBodyGyro-XYZ
+frequencyBodyAccelerationMagnitute
+frequencyBodyAccelerationJerkMagnitute
+frequencyBodyGyroMagnitute
+frequencyBodyGyroJerkMagnitute
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+
+Prefix 'average' denotes the average of each variable for each activity and each subject.
